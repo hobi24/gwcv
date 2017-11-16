@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<!--京东的头部导航开始-->
+    <div class="top">
+        <div class="w">
+        <div class="top_left fl">送至:北京
+            <i><s>◇</s></i>
+        </div>
+        <div class="top_right fr">
+            <ul>
+            <li><a href="#">网站导航</a></li>
+                <li class="line"></li>
+            <li><a href="#">客户服务</a></li>
+                <li class="line"></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="line"></li>
+                <li><a href="#">我的京东</a></li>
+                <li class="line"></li>
+                <li><a href="#">京东会员</a></li>
+                <li class="line"></li>
+                <li><a href="#">企业采购</a></li>
+                <li class="line"></li>
+                <li class="shoujii"><a href="#">
+                    <i class="shouji"></i>
+                    手机京东
+                </a></li>
+                <li class="line"></li>
+                <li><a href="#">关注京东</a></li>
+                <li class="line"></li>
+                <li><a href="#" class="re">免费注册</a></li>
+            <li><a href="#">你好,请登录</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+<div class="cl"></div>
+<!--头部banner开始-->
+<div class="banner" id = "banner_close">
+    <div class="w tp">
+        <img class="bannertu" src="images/topbanner.jpg" >
+        <a href="javascript:;" id = "close"></a>
+
+    </div>
+</div>
+<script>
+    var close = document.getElementById("close");
+    var banner_close = document.getElementById("banner_close");
+    close.onclick = function(){
+        banner_close.style.display = "none";
+    }
+</script>
+<div class="cl"></div>
+<!--logo部分-->
+    <div class="logo w">
+        <div class="logo_left">
+            <a href="www.jingdong.com" class="jda">京东</a>
+            <a href="#" class="donga"><img src="images/dong.gif" alt=""></a>
+        </div>
+        <div class="search">
+            <input class="text" type="text" name="search">
+            <input class="shous" type="button" value="搜索">
+        </div>
+        <div class="gouwuche">
+            <i></i>
+            <a href="">我的购物车</a>
+        </div>
+    </div>
+</body>
+</html>

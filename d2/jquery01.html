@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery练习</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #i1, #i2, #i3 {
+            width: 100px;
+            float: left;
+            background-color: pink;
+            margin: 10px;
+            /*position: relative;*/
+        }
+        div li ul {
+            display: none;
+            /*position: absolute;*/
+        }
+
+        div li ul li {
+            background-color: #888;
+            border:1px solid darkred;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+       /* $(document).ready(function(){
+           $(".box li").mouseenter(function(){
+               $(this).children("ul").show();
+           });
+            $(".box li").mouseleave(function(){
+                $(this).children("ul").hide();
+            });
+        });*/
+        $(document).ready(function(){
+
+            $(".box li").hover(function(){
+                $(this).children().slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li id="i1">表单1
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                </li>
+            </ul>
+        <li id="i2">表单2
+         <ul>
+             <li>1</li>
+             <li>2</li>
+             <li>3</li>
+             <li>4</li>
+         </ul></li>
+        <li id="i3">表单3
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

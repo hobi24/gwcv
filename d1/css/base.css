@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1080px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.cl {
+    clear: both;
+}
+
+/*京东的头部导航开始*/
+.top {
+    height:30px;
+    background: #F1F1F1;
+    border-top:1px solid #C6CCD4;
+    line-height:30px;
+}
+
+.top_left{
+    padding:0 15px;
+    position: relative;
+}
+/*小三角的制作*/
+.top_left i {
+    font:400 15px/15px "宋体";
+    position: absolute;
+    top:15px;
+    right:1px;
+    height: 7px;
+    width:15px;
+    overflow: hidden;
+}
+.top_left i s {
+    position: absolute;
+    top:-8px;
+    left:2px;
+}
+
+.top .top_right li {
+    float: right;
+    width:63px;
+    padding-left:15px;
+}
+
+.top .top_right li.shoujii {
+    position: relative;
+    padding-left:25px;
+}
+.shouji {
+    position: absolute;
+    width:14px;
+    height:20px;
+    background: url("../images/sprite.png") no-repeat;
+    top:4px;
+    left:5px;
+}
+.top_right ul .line {
+    width:1px;
+    height:12px;
+    background-color: #ddd;
+    margin-top:9px;
+    padding:0;
+}
+
+
+.top .top_right li .re {
+color: #C81623;
+
+}
+.top .top_right li a:hover {
+color: #C81623;
+}
+
+/*头部banner部分*/
+.banner {
+    background-color: #8A26C6;
+}
+.bannertu {
+    height:80px;
+    width:1080px;
+}
+
+.tp {
+    position: relative;
+}
+.banner a {
+    position: absolute;
+    width:19px;
+    height:19px;
+    background: url("../images/close.png") no-repeat;
+    top:5px;
+    right:3px;
+}
+/*鼠标悬浮时精灵图往下移*/
+.banner .tp a:hover {
+    background-position: 0 bottom;
+}
+/*logo部分*/
+.logo {
+    height:100px;
+
+}
+
+.logo_left {
+    width: 360px;
+    height: 100px;
+    /*background-color: pink;*/
+    background: url("../images/logo.png") no-repeat 0 18px;
+    float: left;
+}
+.logo_left .jda {
+    /*display: block;*/
+    float: left;
+    width: 170px;
+    text-indent:-2000em;
+}
+.logo_left .donga {
+    /*background-position: 0px 50px;*/
+}
+.search {
+    border:2px solid #B61D1D;
+    float: left;
+    margin-top:25px;
+    margin-right:25px;
+}
+.logo .search .text {
+    /*background-color: pink;*/
+    width: 378px;
+    height:32px;
+    float: left;
+}
+.logo .search .shous {
+    background: #B61D1D;
+    color: #FFFFFF;
+    height:32px;
+    width:80px;
+    float: left;
+}
+
+.logo .gouwuche {
+    position: relative;
+    width:100px;
+    height:34px;
+    line-height:34px;
+    border:1px solid #DFDFDF;
+    background-color: #F9F9F9;
+    margin-top:25px;
+    padding-left:30px;
+    float: left;
+}
+.logo .gouwuche i {
+    position: absolute;
+    width:18px;
+    height:14px;
+    background: url("../images/sprite.png") 0 -58px no-repeat;
+    left:4px;
+    top:9px;
+}
+
+
+
+
+

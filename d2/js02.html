@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js02</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin:20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button onclick=fun1("demo1")>第1个按钮</button>
+<button onclick=fun1("demo2")>第2个按钮</button>
+<button onclick=fun1("demo3")>第3个按钮</button>
+<button onclick=fun1("demo4")>第4个按钮</button>
+<div id="demo1">1</div>
+<div id="demo2">2</div>
+<div id="demo3">3</div>
+<div id="demo4">4</div>
+<script>
+    function fun1(a) {
+      var aa = document.getElementById(a);
+        aa.style.display = "block";
+    }
+
+    function fun(a, b) {
+        if (fun.length == arguments.length) {
+
+            console.log(a + b);
+        }else {
+            console.log("不好意思,你输入的实参个数不对,正确的个数为:" + fun.length);
+        }
+    }
+    fun(2,"99年");
+</script>
+</body>
+</html>

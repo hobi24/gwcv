@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ip {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+<script>
+    window.onload = function () {
+
+        var text = document.getElementById("ip");
+        text.onfocus = function () {
+            if (text.value == "请输入...") {
+                text.value = "";
+                text.style.color = "black";
+            }
+        }
+        text.onblur = function(){
+            if (text.value == ""){
+                text.value ="请输入...";
+                text.style.color = "#999";
+            }
+        }
+
+    }
+</script>
+<input type="text" id="ip" value="请输入...">
+<button>搜索</button>
+</body>
+</html>
